@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import axios from 'axios';
 import Register from './components/Register'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  axios.defaults.baseURL = 'http://localhost:3000';
+  axios.defaults.withCredentials = true;
 
   return (
     
