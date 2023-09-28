@@ -1,6 +1,5 @@
 import axios from 'axios';
 import Routes from './Routes.jsx';
-import Register from './components/Register';
 import {UserContextProvider} from './assets/UserContext';
 import { useContext } from 'react';
 import { UserContext } from './assets/UserContext';
