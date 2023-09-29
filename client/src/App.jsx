@@ -1,23 +1,14 @@
-import axios from 'axios';
-import Routes from './Routes.jsx';
-import {UserContextProvider} from './assets/UserContext';
-import { useContext } from 'react';
-import { UserContext } from './assets/UserContext';
+import axios from "axios";
+import {UserContextProvider} from "./assets/UserContext";
+import Routes from "./Routes";
 
 function App() {
-  
-  axios.defaults.baseURL = 'http://localhost:3000';
+  axios.defaults.baseURL = 'http://localhost:4040';
   axios.defaults.withCredentials = true;
-
-  const {user} = useContext(UserContext);
-  console.log(user);
-
   return (
-      <UserContextProvider>
-        <Routes/>
-      </UserContextProvider>
-      
-     
+    <UserContextProvider>
+      <Routes />
+    </UserContextProvider>
   )
 }
 
