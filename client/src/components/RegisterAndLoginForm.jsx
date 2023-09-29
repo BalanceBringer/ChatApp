@@ -15,11 +15,11 @@ export default function RegisterAndLoginForm() {
     setId(data.id);
   }
   return (
-    <div className="bg-blue-200 h-screen flex items-center">
+    <div className="bg-gradient-to-r from-green-200 to-blue-200 h-screen flex items-center">
       
       <form className="w-64 mx-auto mb-12" onSubmit={handleSubmit}>
-        <div className="w-full flex-col items-center text-center">
-          Guardian Circle
+        <div className="rounded-lg mb-2 w-full items-center text-center text-5xl font-bold text-green-900 p-2">
+          Guardian Circle         
         </div>
         <input value={username}
                onChange={ev => setUsername(ev.target.value)}
